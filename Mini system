@@ -1,0 +1,197 @@
+incCertainly! Below is a collection of 10 C programs that demonstrate the use of various control structures, such as if, else, switch, for, while, and do-while loops.
+
+1. Simple If-Else Program
+
+This program checks whether a number is positive, negative, or zero.
+
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num > 0) {
+        printf("The number is positive.\n");
+    } else if (num < 0) {
+        printf("The number is negative.\n");
+    } else {
+        printf("The number is zero.\n");
+    }
+
+    return 0;
+}
+
+2. Switch Case Program
+
+This program takes a day number (1 to 7) and displays the corresponding day of the week.
+
+#include <stdio.h>
+
+int main() {
+    int day;
+    printf("Enter a day number (1 to 7): ");
+    scanf("%d", &day);
+
+    switch (day) {
+        case 1:
+            printf("Monday\n");
+            break;
+        case 2:
+            printf("Tuesday\n");
+            break;
+        case 3:
+            printf("Wednesday\n");
+            break;
+        case 4:
+            printf("Thursday\n");
+            break;
+        case 5:
+            printf("Friday\n");
+            break;
+        case 6:
+            printf("Saturday\n");
+            break;
+        case 7:
+            printf("Sunday\n");
+            break;
+        default:
+            printf("Invalid day number.\n");
+    }
+
+    return 0;
+}
+
+3. For Loop Example
+
+This program calculates the factorial of a number using a for loop.
+
+#include <stdio.h>
+
+int main() {
+    int num, factorial = 1;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    for (int i = 1; i <= num; i++) {
+        factorial *= i;
+    }
+
+    printf("The factorial of %d is %d\n", num, factorial);
+
+    return 0;
+}
+
+4. While Loop Example
+
+This program finds the sum of natural numbers using a while loop.
+
+#include <stdio.h>
+
+int main() {
+    int num, sum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    int i = 1;
+    while (i <= num) {
+        sum += i;
+        i++;
+    }
+
+    printf("The sum of first %d natural numbers is %d\n", num, sum);
+
+    return 0;
+}
+
+5. Do-While Loop Example
+
+This program prompts the user to enter a number and prints the square of the number, repeating until a negative number is entered.
+
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    do {
+        printf("Enter a number (negative to quit): ");
+        scanf("%d", &num);
+
+        if (num >= 0) {
+            printf("The square of %d is %d\n", num, num * num);
+        }
+    } while (num >= 0);
+
+    return 0;
+}
+
+6. Nested If-Else Program
+
+This program checks if a number is divisible by both 3 and 5.
+
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num % 3 == 0) {
+        if (num % 5 == 0) {
+            printf("The number is divisible by both 3 and 5.\n");
+        } else {
+            printf("The number is divisible by 3 but not by 5.\n");
+        }
+    } else {
+        printf("The number is not divisible by 3.\n");
+    }
+
+    return 0;
+}
+
+7. For Loop to Print Multiplication Table
+
+This program prints the multiplication table of a given number.
+
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    for (int i = 1; i <= 10; i++) {
+        printf("%d * %d = %d\n", num, i, num * i);
+    }
+
+    return 0;
+}
+
+8. Break and Continue in Loops
+
+This program demonstrates the usage of break and continue statements in a loop.
+
+#include <stdio.h>
+
+int main() {
+    for (int i = 1; i <= 10; i++) {
+        if (i == 5) {
+            continue; // Skip number 5
+        }
+        if (i == 8) {
+            break; // Stop the loop when i reaches 8
+        }
+        printf("%d\n", i);
+    }
+
+    return 0;
+}
+
+9. Find Prime Number Using For Loop
+
+This program checks if a given number is prime.
+
+#include <stdio.h>
+
+int main
+
